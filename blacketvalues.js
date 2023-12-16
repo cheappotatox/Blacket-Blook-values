@@ -194,8 +194,8 @@ function filterBlooks() {
         filteredBlooks.forEach(blook => {
             const blookItem = document.createElement('div');
             blookItem.className = 'blook-item';
-            blookItem.innerHTML = `<strong>${blook.name}</strong><br>Copies: ${blook.copies}<br>Sell Price: ${blook.sellprice}<br>Value: ${blook.value}<br>Pack: ${blook.pack}<br>Glicko: ${calculateGlicko(blook.copies)}<br>Rarity: ${blook.rarity}`;
             resultsContainer.appendChild(blookItem);
+            blookItem.innerHTML = `<strong>${blook.name}</strong><br>Copies: ${blook.copies}<br>Sell Price: ${blook.sellprice}<br>Value: ${blook.value}<br>Pack: ${blook.pack}<br>Rarity: ${blook.rarity}<br>Glicko: ${calculateGlicko(blook.copies)}`;
         });
     } else {
         const noResults = document.createElement('div');
