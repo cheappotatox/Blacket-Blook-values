@@ -186,7 +186,7 @@ function calculateNewValue(sellprice, copies, packPrice, lowerRate, higherRate) 
   }
 
 function calculateGlicko(copies) {
-    const Glicko = (12532 / copies).toFixed(1); // Round to the nearest tenth
+    const Glicko = (12532 / copies).toFixed(2); // Round to the nearest tenth
 
     return Glicko;
 }
