@@ -139,10 +139,38 @@ const blookValues = [
     { name: 'Lucky Frog', copies: 1735, value: calculateNewValue(300, 1735, 20, 75, 25.563), pack: 'Aquatic Pack', sellprice: 300 , rarity: "Chroma", glicko: calculateGlicko(1735)},
     { name: 'Lovely Frog', copies: 1755, value: calculateNewValue(300, 1755, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 300, rarity: "Chroma", glicko: calculateGlicko(1755)},
 
-    // Rare Legendaries
+    // Legendaries
     { name: 'Monkxy', copies: 1608, value: calculateNewValue(250, 1608, 30, 75, 25.563), pack: 'OG Pack' , sellprice: 250, rarity: "Legendary", glicko: calculateGlicko(1608)},
+    { name: 'Root', copies: 2118, value: calculateNewValue(200, 2118, 30, 0, 75, 25.563), pack: 'OG Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2118)},
+    { name: 'Eternal Prism Blade', copies: 470, value: calculateNewValue(200, 470, 25, 75.2, 24.85333), pack: 'Sci-Fi Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(470)},
+    { name: 'Sugar Glider', copies: 686, value: calculateNewValue(200, 686, 25, 75, 25), pack: 'Outback Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(686)},
+    { name: 'Piano', copies: 746, value: calculateNewValue(200, 746, 25, 58, 19.5337), pack: 'Music Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(746)},
+    { name: 'Golden Ankha', copies: 2701, value: calculateNewValue(200, 2701, 25, 67.5, 27.023), pack: 'Ankha Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2701)},
+    { name: 'Yeti', copies: 639, value: calculateNewValue(200, 639, 25, 78, 22), pack: 'Ice Monster Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(639)},
+    { name: 'Ghost', copies: 2956, value: calculateNewValue(200, 2956, 25, 94.3, 12.6605), pack: 'Spooky Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2956)},
+    { name: 'Sand Castle', copies: 1209, value: calculateNewValue(200, 1209, 25, 58, 19.5337), pack: 'Summer Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(1209)},
+    { name: 'Tyrannosaurus Rex', copies: 521, value: calculateNewValue(200, 521, 25, 78, 22.05), pack: 'Dino Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(521)},
+    { name: 'M12 Shotgun', copies: 1337, value: calculateNewValue(200, 1337, 25, 75, 25.0035), pack: 'Combat Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(1337)},
+    { name: 'Master Chief', copies: 1397, value: calculateNewValue(200, 1397, 25, 70, 30.003), pack: 'Gaming Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(1397)},
+    { name: 'Clock Tower', copies: 592, value: calculateNewValue(200, 592, 25, 70, 26.934), pack: 'Time Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(592)},
+    { name: 'Captain Blackbeard', copies: 240, value: calculateNewValue(200, 240, 25, 80, 20), pack: 'Pirate Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(240)},
+    { name: 'Santa Claus', copies: 3005, value: calculateNewValue(200, 3005, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(3005)},
+    { name: 'Football Helmet', copies: 936, value: calculateNewValue(200, 936, 20, 75, 25), pack: 'Sports Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(936)},
+    { name: 'King of Hearts', copies: 886, value: calculateNewValue(200, 886, 20, 75.2, 24.85), pack: 'Wonderland Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(886)},
+    { name: 'King', copies: 2485, value: calculateNewValue(200, 2485, 20, 67.5, 33.158), pack: 'Medieval Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2485)},
+    { name: 'Astronaut', copies: 2862, value: calculateNewValue(200, 2862, 20, 75, 25.525), pack: 'Space Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2862)},
+    { name: 'Lion', copies: 922, value: calculateNewValue(200, 922, 20, 75, 25.04), pack: 'safari Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(922)},
+    { name: 'Moonstone', copies: 617, value: calculateNewValue(250, 617, 20, 75, 25.0537), pack: 'Gemstone Pack' , sellprice: 250, rarity: "Legendary", glicko: calculateGlicko(617)},
+    { name: 'Opal', copies: 1157, value: calculateNewValue(200, 1157, 20, 75, 25.0537), pack: 'Gemstone Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(1157)},
+    { name: 'Starfruit', copies: 964, value: calculateNewValue(200, 964, 20, 75, 24.8625), pack: 'Fruit Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(964)},
+    { name: 'Electric Elemental', copies: 1098, value: calculateNewValue(200, 1098, 20, 75, 25), pack: 'Elemental Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(1098)},
     { name: 'Black Blook', copies: 569, value: calculateNewValue(250, 569, 20, 0, 138.255), pack: 'Color Pack' , sellprice: 250, rarity: "Legendary", glicko: calculateGlicko(569)},
+    { name: 'White Blook', copies: 882, value: calculateNewValue(200, 882, 20, 0, 138.255), pack: 'Color Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(882)},
+    { name: 'Rock Candy', copies: 793, value: calculateNewValue(200, 793, 20, 78, 22), pack: 'Candy Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(793)},
+    { name: 'Sandwich', copies: 2188, value: calculateNewValue(200, 2188, 20, 75, 26.05), pack: 'Breakfast Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2188)},
+    { name: 'Mega Bot', copies: 1002, value: calculateNewValue(200, 1002, 20, 78, 22.034), pack: 'Bot Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(1002)},
     { name: 'Megalodon', copies: 1557, value: calculateNewValue(250, 1557, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 250, rarity: "Legendary", glicko: calculateGlicko(1557)},
+    { name: 'Baby Shark', copies: 2074, value: calculateNewValue(200, 2074, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2074)},
 ];
 
 function filterBlooks() {
@@ -186,7 +214,7 @@ function calculateNewValue(sellprice, copies, packPrice, lowerRate, higherRate) 
   }
 
 function calculateGlicko(copies) {
-    const Glicko = (12532 / copies).toFixed(2); // Round to the nearest tenth
+    const Glicko = (12532 / copies).toFixed(); // Round to the nearest tenth
 
     return Glicko;
 }

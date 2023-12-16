@@ -29,12 +29,8 @@ body {
     line-height: 32px;
 }
 
-h2, h3 {
+h3 {
     color: #333;
-}
-
-strong {
-    color: #007bff;
 }
 
 .body {
