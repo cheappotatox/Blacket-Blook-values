@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blacketvalues.css">
+    <title>Blacket Blook Values</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Blacket Blook Values</h1>
+        <label for="blookSearch">Search Blooks:</label>
+        <input type="text" id="blookSearch" oninput="filterBlooks()" placeholder="Type to search...">
+        <div id="results"></div>
+        <a href="#" class="home-button">Home</a>
+    </div>
+
+    <div class="text">
+        <h2><strong>Context:</strong></h2>
+        <div>Glicko essentially means how accurate the value of the blook is. The lower the Glicko, the more accurate.</div>
+    </div>
+
+    <script src="blacketvalues.js"></script>
+</body>
+</html>
