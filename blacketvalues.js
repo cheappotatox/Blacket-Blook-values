@@ -137,7 +137,12 @@ const blookValues = [
     { name: 'Rainbow Jellyfish', copies: 1696, value: calculateNewValue(300, 1696, 20, 75, 25.563), pack: 'Aquatic Pack', sellprice: 300 , glicko: calculateGlicko(1696)},
     { name: 'Spring Frog', copies: 1533, value: calculateNewValue(300, 1533, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 300, glicko: calculateGlicko(1533)},
     { name: 'Lucky Frog', copies: 1735, value: calculateNewValue(300, 1735, 20, 75, 25.563), pack: 'Aquatic Pack', sellprice: 300 , glicko: calculateGlicko(1735)},
-    { name: 'Lovely Frog', copies: 1755, value: calculateNewValue(300, 1755, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 300},
+    { name: 'Lovely Frog', copies: 1755, value: calculateNewValue(300, 1755, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 300, glicko: calculateGlicko(1755)},
+
+    // Rare Legendaries
+    { name: 'Monkxy', copies: 1608, value: calculateNewValue(250, 1608, 30, 75, 25.563), pack: 'OG Pack' , sellprice: 250, glicko: calculateGlicko(1608)},
+    { name: 'Black Blook', copies: 569, value: calculateNewValue(250, 569, 20, 0, 138.255), pack: 'Color Pack' , sellprice: 250, glicko: calculateGlicko(569)},
+    { name: 'Megalodon', copies: 1557, value: calculateNewValue(250, 1557, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 250, glicko: calculateGlicko(1557)},
 ];
 
 function filterBlooks() {
