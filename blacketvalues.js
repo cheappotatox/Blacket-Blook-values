@@ -183,7 +183,11 @@ function filterBlooks() {
         return;
     }
 
-    const filteredBlooks = blookValues.filter(blook => blook.name.toLowerCase().includes(searchTerm));
+    const filteredBlooks = blookValues.filter(blook =>
+        blook.name.toLowerCase().includes(searchTerm) ||
+        blook.pack.toLowerCase().includes(searchTerm) ||
+        blook.rarity.toLowerCase().includes(searchTerm)
+    );
 
     resultsContainer.innerHTML = ''; // Clear previous results
 
