@@ -192,8 +192,17 @@ function filterBlooks() {
     resultsContainer.innerHTML = ''; // Clear previous results
 
     if (filteredBlooks.length > 0) {
-        // Sort the filtered blooks by name length (shorter names first)
-        filteredBlooks.sort((a, b) => a.name.length - b.name.length);
+        // Sort the filtered blooks first by rarity, then by name length
+        filteredBlooks.sort((a, b) => {
+            const rarityOrder = getRarityOrder(a.rarity) - getRarityOrder(b.rarity);
+
+            if (rarityOrder === 0) {
+                // If rarities are the same, sort by name length
+                return a.name.length - b.name.length;
+            }
+
+            return rarityOrder;
+        });
 
         filteredBlooks.forEach(blook => {
             const blookItem = document.createElement('div');
@@ -206,6 +215,19 @@ function filterBlooks() {
         noResults.textContent = 'No matching blooks found.';
         resultsContainer.appendChild(noResults);
     }
+}
+
+// Helper function to get rarity order
+function getRarityOrder(rarity) {
+    const rarityOrder = {
+        'Iridescent': 0,
+        'Mystical': 1,
+        'Chroma': 2,
+        'Legendary': 3
+        // Add more rarities if needed
+    };
+
+    return rarityOrder[rarity] || 999; // Default to a high value if rarity is not recognized
 }
 
 // Function to calculate the new value based on the formula and box percentages
