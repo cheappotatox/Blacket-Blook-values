@@ -154,7 +154,7 @@ const blookValues = [
     { name: 'Master Chief', copies: 1397, value: calculateNewValue(200, 1397, 25, 70, 30.003), pack: 'Gaming Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(1397)},
     { name: 'Clock Tower', copies: 592, value: calculateNewValue(200, 592, 25, 70, 26.934), pack: 'Time Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(592, 200)},
     { name: 'Captain Blackbeard', copies: 240, value: calculateNewValue(200, 240, 25, 80, 20), pack: 'Pirate Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(240, 200)},
-    { name: 'Santa Claus', copies: 3005, value: calculateNewValue(200, 3005, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(3005, 200)},
+    { name: 'Santa Claus', copies: 3095, value: calculateNewValue(200, 3095, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(3095, 200)},
     { name: 'Football Helmet', copies: 936, value: calculateNewValue(200, 936, 20, 75, 25), pack: 'Sports Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(936, 200)},
     { name: 'King of Hearts', copies: 886, value: calculateNewValue(200, 886, 20, 75.2, 24.85), pack: 'Wonderland Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(886, 200)},
     { name: 'King', copies: 2485, value: calculateNewValue(200, 2485, 20, 67.5, 33.158), pack: 'Medieval Pack' , sellprice: 200, rarity: "Legendary", glicko: calculateGlicko(2485, 200)},
