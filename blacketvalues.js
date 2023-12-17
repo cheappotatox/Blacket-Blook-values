@@ -75,7 +75,7 @@ const blookValues = [
     { name: 'Mummy Cookie', copies: 965, value: calculateNewValue(300, 965, 25, 94.3, 12.6605), pack: 'Spooky Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.025%', glicko: calculateGlicko(965, 300)},
     { name: 'Pumpkin Cookie', copies: 1058, value: calculateNewValue(300, 1058, 25, 94.3, 12.6605), pack: 'Spooky Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(1058, 300)},
     { name: 'Haunted Pumpkin', copies: 1559, value: calculateNewValue(300, 1559, 25, 94.3, 12.6605), pack: 'Spooky Pack', sellprice: 300, rarity: "Chroma" , droprate: '0.05%', glicko: calculateGlicko(1559, 300)},
-    { name: 'Coconut Cocktail', copies: 361, value: calculateNewValue(300, 536126, 25, 58, 19.5337), pack: 'Summer Pack', sellprice: 300, rarity: "Chroma" , droprate: '0.03%', glicko: calculateGlicko(361, 300)},
+    { name: 'Coconut Cocktail', copies: 361, value: calculateNewValue(300, 361, 25, 58, 19.5337), pack: 'Summer Pack', sellprice: 300, rarity: "Chroma" , droprate: '0.03%', glicko: calculateGlicko(361, 300)},
     { name: 'Golden Amber', copies: 167, value: calculateNewValue(300, 167, 25, 78, 22.05), pack: 'Dino Pack', sellprice: 300, rarity: "Chroma" , droprate: '0.05%', glicko: calculateGlicko(167, 300)},
     { name: 'M67 Grenade', copies: 560, value: calculateNewValue(300, 560, 25, 75, 25.0035), pack: 'Combat Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(560, 300)},
     { name: 'Golden Among Us', copies: 549, value: calculateNewValue(300, 549, 25, 70, 30.003), pack: 'Gaming Pack', sellprice: 300 , rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(549, 300)},
