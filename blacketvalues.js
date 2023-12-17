@@ -208,7 +208,22 @@ function filterBlooks() {
             const blookItem = document.createElement('div');
             blookItem.className = 'blook-item';
             resultsContainer.appendChild(blookItem);
-            blookItem.innerHTML = `<strong>${blook.name}</strong><br>Copies: ${blook.copies}<br>Sell Price: ${blook.sellprice}<br>Value: ${blook.value}<br>Pack: ${blook.pack}<br>Rarity: ${blook.rarity}<br>Drop Rate: ${blook.droprate}<br>Glicko: ${calculateGlicko(blook.copies, blook.sellprice)}`;
+            
+            // Add margin to each line of data inside the box
+            blookItem.innerHTML = `
+                <strong>${blook.name}</strong><br>
+                Copies: ${blook.copies}<br>
+                Sell Price: ${blook.sellprice}<br>
+                Value: ${blook.value}<br>
+                Pack: ${blook.pack}<br>
+                Rarity: ${blook.rarity}<br>
+                Drop Rate: ${blook.droprate}<br>
+                Glicko: ${calculateGlicko(blook.copies, blook.sellprice)}
+            `;
+
+            // Add a margin between each line of data inside the box
+            blookItem.style.marginBottom = '24px';
+            blookItem.style.lineHeight = '24px';
         });
     } else {
         const noResults = document.createElement('div');
@@ -216,6 +231,7 @@ function filterBlooks() {
         resultsContainer.appendChild(noResults);
     }
 }
+
 
 // Helper function to get rarity order
 function getRarityOrder(rarity) {
