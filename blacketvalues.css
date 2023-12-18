@@ -37,6 +37,8 @@ body {
 h3 {
     color: #333;
     font-size: xx-large;
+    position: relative;
+    left: 40.5%;
 }
 
 .body {
