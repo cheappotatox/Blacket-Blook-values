@@ -240,9 +240,6 @@ function filterBlooks() {
             blookItem.className = 'blook-item';
             resultsContainer.appendChild(blookItem);
 
-            // Convert droprate to a numeric value
-            const droprateValue = parseFloat(blook.droprate);
-
             // Add margin to each line of data inside the box
             blookItem.innerHTML = `
                 <strong>${blook.name}</strong><br>
