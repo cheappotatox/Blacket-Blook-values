@@ -283,7 +283,7 @@ function getRarityOrder(rarity) {
 // Function to calculate the new value based on the formula and box percentages
 function calculateNewValue(sellprice, copies, packPrice, lowerRate, higherRate) {
     const roundedValue = Math.round(
-      (sellprice * (12532 - copies)) / copies / (30 / packPrice) / ((100 / ((lowerRate + higherRate * 2)) * 2))
+      sellprice * (12532 / copies) / (30 / packPrice) / ((100 / ((lowerRate + higherRate * 2)) * 2))
     );
   
     return roundedValue;
@@ -296,7 +296,7 @@ function calculateGlicko(copies, droprate, lowerRate, higherRate, packprice) {
 }
 
 function calculateDemand(copies) {
-    const Demand = (12532 - copies).toFixed(2);
+    const Demand = (12532 / copies).toFixed(2);
 
     return Demand;
 }
