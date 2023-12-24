@@ -25,7 +25,7 @@ const blookValues = [
   
     // Mysticals
     { name: 'Xotic', copies: 171, value: calculateNewValue(1000, 171, 30, 75, 25.3075), pack: 'OG Pack', sellprice: 1000, rarity: "Mystical" , droprate: '0.0025%', glicko: calculateGlicko(171, 0.0025, 75, 25.3075, 30), demand: calculateDemand(171)},
-    { name: 'Envi', copies: 161, value: calculateNewValue(1000, 161, 30, 75, 25.3075), pack: 'OG Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.005%', glicko: calculateGlicko(161, 0.005, 75, 25.3075, 30), demand: calculateDemand(161)},
+    { name: 'Monkxy', copies: 161, value: calculateNewValue(1000, 161, 30, 75, 25.3075), pack: 'OG Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.005%', glicko: calculateGlicko(161, 0.005, 75, 25.3075, 30), demand: calculateDemand(161)},
     { name: 'Celestial Oracle Staff', copies: 12, value: calculateNewValue(1000, 12, 25, 75.2, 24.8533), pack: 'Sci-Fi Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.0033%', glicko: calculateGlicko(12, 0.0033, 75.2, 24.8533, 25), demand: calculateDemand(12) },
     { name: 'Golden Harp', copies: 30, value: calculateNewValue(1000, 30, 25, 58, 19.5337), pack: 'Music Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.0037%', glicko: calculateGlicko(30, 0.0037, 58, 19.5337, 25), demand: calculateDemand(30) },
     { name: 'Rainbow Ankha', copies: 159, value: calculateNewValue(1000, 159, 25, 67.5, 27.023), pack: 'Ankha Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.003%', glicko: calculateGlicko(159, 0.003, 67.5, 27.023, 25), demand: calculateDemand(159) },
@@ -141,7 +141,7 @@ const blookValues = [
     { name: 'Lovely Frog', copies: 1782, value: calculateNewValue(300, 1782, 20, 75, 25.563), pack: 'Aquatic Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.08%', glicko: calculateGlicko(1782, 0.05, 75, 25.563, 20), demand: calculateDemand(1782)},
 
     // Legendaries
-    { name: 'Monkxy', copies: 1616, value: calculateNewValue(250, 1616, 30, 75, 25.563), pack: 'OG Pack' , sellprice: 250, rarity: "Legendary", droprate: '0.25%', glicko: calculateGlicko(1616, 0.25, 75, 25.563, 30), demand: calculateDemand(1616)},
+    { name: 'Envi', copies: 1616, value: calculateNewValue(250, 1616, 30, 75, 25.563), pack: 'OG Pack' , sellprice: 250, rarity: "Legendary", droprate: '0.25%', glicko: calculateGlicko(1616, 0.25, 75, 25.563, 30), demand: calculateDemand(1616)},
     { name: 'Root', copies: 2118, value: calculateNewValue(200, 2118, 30, 0, 75, 25.563), pack: 'OG Pack' , sellprice: 200, rarity: "Legendary", droprate: '0.5%', glicko: calculateGlicko(2118, 0.5, 75, 25.563, 30), demand: calculateDemand(2118)},
     { name: 'Eternal Prism Blade', copies: 470, value: calculateNewValue(200, 470, 25, 75.2, 24.85333), pack: 'Sci-Fi Pack' , sellprice: 200, rarity: "Legendary", droprate: '0.3%', glicko: calculateGlicko(470, 0.3, 75.2, 24.8533, 25), demand: calculateDemand(470)},
     { name: 'Sugar Glider', copies: 686, value: calculateNewValue(200, 686, 25, 75, 25), pack: 'Outback Pack' , sellprice: 200, rarity: "Legendary", droprate: '0.37%', glicko: calculateGlicko(686, 0.37, 75, 25, 25), demand: calculateDemand(686)},
@@ -284,7 +284,7 @@ function calculateNewValue(sellprice, copies, packPrice, lowerRate, higherRate) 
     );
   
     return roundedValue;
-  }
+}
 
 function calculateGlicko(copies, droprate, lowerRate, higherRate, packprice) {
     const Glicko = ((12532 / copies) * ((droprate * (100 / ((lowerRate + higherRate * 2)) * 2)) / 0.013) * (30 / packprice)).toFixed(2);
