@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blacketvalues.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
     <title>Blacket Blook Values</title>
 </head>
 <body>
     <div class="calculator">
         <h1>Blacket Blook Values</h1>
-        <h2><strong>Credits: Ned</strong></h2>
         <label for="blookSearch">Search Blooks:</label>
         <input type="text" id="blookSearch" oninput="filterBlooks()" placeholder="Type to search...">
         <div id="results"></div>
     </div>
 
     <div class="body-text">
-        <h3><strong>Definitions</strong></h3>
+        <h2><strong>Definitions</strong></h2>
         <div class="text"><strong>Copies:</strong> How much of that blook exists in total. This includes copies from users with a duplicate (more than one of that blook), banned users, inactive users (users who haven't been online for over a week), and bazaar listings.</div>
         <div class="text"><strong>Sell Price:</strong> How much you can sell the blook for on default.</div>
         <div class="text"><strong>Value:</strong> How much it is currently worth in tokens. This might not always be reliable, which is why we have Glicko.</div>
@@ -28,8 +32,8 @@
         <div class="text"><strong>Rarity:</strong> A label describing how hard it is to obtain such blook. The hardest is Iridescent, followed by Mystical, Chroma, then Legendary.</div>
         <div class="text"><strong>Drop rate:</strong> The chances of getting the blook.</div>
         <div class="text"><strong>Glicko:</strong> Describes how confident the number of the value of the blook is. The lower the Glicko, the more confident. (For more context, a Glicko of under 50.00 is considered "high confidence", anything above 100.00 is considered "low confidence")</div>
-        <div class="text"><strong>Demand:</strong> Represents how many people don't have the blook. This is only an approximate, as some users have dupes.</div>
-        <div class="notice"><strong>* Note: This calculator is not linked to the Blacket Bot in any way. Any data may be inaccurate, but the incertitude should usually be ≤ 10% *</strong></div>
+        <div class="text"><strong>Demand:</strong> Represents how many people requests for the blook. Since we do not know the time period or demand size, we could only estimate the category it is in.</div>
+        <div class="text"><strong>* Note: This calculator is not linked to the Blacket Bot in any way. Any data may be inaccurate, but the incertitude should usually be ≤ 10% *</strong></div>
     </div>
 
     <script src="blacketvalues.js"></script>
