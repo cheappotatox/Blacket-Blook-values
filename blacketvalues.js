@@ -22,7 +22,7 @@ const blookValues = [
     { name: 'Lucky Hamster', copies: 2186, value: 'O/C', pack: 'Lucky Pack, currently none', sellprice: 300, rarity: "Chroma", droprate: '100%, currently unobtainble', glicko: NaN, demand: "Moderate" },
     { name: 'Vampire Ankha', copies: 68, value: 'O/C', pack: 'Spooky Pack, currently none', sellprice: 400, rarity: "Chroma", droprate: '0.0077%, currently unobtainble', glicko: NaN, demand: "Moderate" },
     { name: 'Turkey Ankha', copies: 37, value: 'O/C', pack: 'Ankha Pack, currently none', sellprice: 350, rarity: "Chroma", droprate: '0.01%, currently unobtainble', glicko: NaN, demand: "Moderate" },
-    { name: 'Festive Xotic', copies: 43, value: 'O/C', pack: 'OG Pack, currently none', sellprice: 1000, rarity: "Mystical", droprate: '0.0025%, currently unobtainble', glicko: NaN, demand: "High"},
+    { name: 'Festive Xotic', copies: 43, value: 'O/C', pack: 'OG Pack, currently none', sellprice: 1000, rarity: "Mystical", droprate: '0.001%, currently unobtainble', glicko: NaN, demand: "High"},
 
     // For all equations, let x be the drop rate of a blook
   
@@ -40,7 +40,7 @@ const blookValues = [
     { name: 'Diamond Sword', copies: 59, value: calculateNewValue(1200, 59, 25, 75, 25.0035), pack: 'Combat Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.0025%', glicko: calculateGlicko(59, 0.0025, 75, 25.0035, 25), demand: "Moderate"},
     { name: 'Gaming Mouse', copies: 67, value: calculateNewValue(1150, 67, 25, 70, 30.003), pack: 'Gaming Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.003%', glicko: calculateGlicko(67, 0.003, 70, 30.003, 25), demand: "Moderate"},
     { name: 'Time Machine', copies: 18, value: calculateNewValue(1050, 18, 25, 70, 26.934), pack: 'Time Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.004%', glicko: calculateGlicko(18, 0.004, 70, 26.934, 25), demand: "High" },
-    { name: 'Hamsta Claus', copies: 13, value: calculateNewValue(1200, 13, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 1000, rarity: "Mystical", droprate: '0.0025%', glicko: calculateGlicko(13, 0.0025, 72.5, 27.9675, 25), demand: "High"},
+    { name: 'Hamsta Claus', copies: 14, value: calculateNewValue(1200, 14, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 1000, rarity: "Mystical", droprate: '0.0025%', glicko: calculateGlicko(14, 0.0025, 72.5, 27.9675, 25), demand: "High"},
     { name: 'Diamond Gift', copies: 172, value: calculateNewValue(950, 172, 25, 72.5, 27.9675), pack: 'Blizzard Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.005%', glicko: calculateGlicko(172, 0.005, 72.5, 27.9675, 25), demand: "Low"},
     { name: 'Dark Dragon', copies: 312, value: calculateNewValue(1150, 312, 20, 67, 33.158), pack: 'Medieval Pack' , sellprice: 1000, rarity: "Mystical", droprate: '0.003%', glicko: calculateGlicko(312, 0.003, 67, 33.158, 20), demand: "Low"},
     { name: 'Phantom King', copies: 545, value: calculateNewValue(950, 545, 20, 67, 33.158), pack: 'Medieval Pack', sellprice: 1000, rarity: "Mystical", droprate: '0.005%', glicko: calculateGlicko(545, 0.005, 67, 33.158, 20), demand: "Low"},
@@ -57,8 +57,8 @@ const blookValues = [
     // Equation: -4000x + 420
 
     { name: 'Zastix', copies: 2094, value: calculateNewValue(220, 2094, 30, 68.75, 25.3075), pack: 'OG Pack', sellprice: 300, rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(2094, 0.05, 68.75, 25.3075, 30), demand: "Low"},
-    { name: 'Hijacked Neural Implant', copies: 61, value: calculateNewValue(340, 61, 25, 75.2, 24.85333), pack: 'Sci-Fi Pack', rarity: "Chroma", sellprice: 300, droprate: '0.02%', glicko: calculateGlicko(61, 0.02, 75.2, 24.85333, 25), demand: "Moderate"},
-    { name: 'Blue Lightsaber', copies: 64, value: calculateNewValue(300, 64, 25, 75.2, 24.85333), pack: 'Sci-Fi Pack', sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(64, 0.03, 75.2, 24.85333, 25), demand: "Moderate"},
+    { name: 'Hijacked Neural Implant', copies: 63, value: calculateNewValue(340, 63, 25, 75.2, 24.85333), pack: 'Sci-Fi Pack', rarity: "Chroma", sellprice: 300, droprate: '0.02%', glicko: calculateGlicko(63, 0.02, 75.2, 24.85333, 25), demand: "Moderate"},
+    { name: 'Blue Lightsaber', copies: 68, value: calculateNewValue(300, 68, 25, 75.2, 24.85333), pack: 'Sci-Fi Pack', sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(68, 0.03, 75.2, 24.85333, 25), demand: "Moderate"},
     { name: 'Teal Platypus', copies: 162, value: calculateNewValue(300, 162, 25, 75, 25), pack: 'Outback Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(162, 0.03, 75, 25, 25), demand: "Low"},
     { name: 'White Piano', copies: 187, value: calculateNewValue(300, 187, 25, 58, 19.5337), pack: 'Music Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(187, 0.03, 58, 19.5337, 25), demand: "Low"},
     { name: 'Zone Ankha', copies: 782, value: calculateNewValue(340, 782, 25, 67.5, 27.023), pack: 'Ankha Pack', sellprice: 300, rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(782, 0.02, 67.5, 27.023, 25), demand: "Low"},
@@ -95,8 +95,8 @@ const blookValues = [
     { name: 'Blue Sweater Snowman', copies: 154, value: calculateNewValue(340, 154, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(154, 0.02, 72.5, 27.9675, 25), demand: "Moderate"},
     { name: 'Red Sweater Snowman', copies: 179, value: calculateNewValue(340, 179, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(179, 0.02, 72.5, 27.9675, 25), demand: "Low"},
     { name: 'Snowy Bush Monster', copies: 129, value: calculateNewValue(340, 129, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(129, 0.02, 72.5, 27.9675, 25), demand: "Moderate"},
-    { name: 'Chilly Flamingo', copies: 200, value: calculateNewValue(300, 200, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(200, 0.03, 72.5, 27.9675, 25), demand: "Low"},
     { name: 'Tropical Globe', copies: 450, value: calculateNewValue(340, 450, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(450, 0.02, 72.5, 27.9675, 25), demand: "Low"},
+    { name: 'Chilly Flamingo', copies: 200, value: calculateNewValue(300, 200, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(200, 0.03, 72.5, 27.9675, 25), demand: "Low"},
     { name: 'Frost Wreath', copies: 614, value: calculateNewValue(300, 614, 25, 72.5, 27.9675), pack: 'Blizzard Pack', sellprice: 300 , rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(614, 0.03, 72.5, 27.9675, 25), demand: "Low"},
     { name: 'Cookies Combo', copies: 283, value: calculateNewValue(300, 283, 25, 72.5, 27.9675), pack: 'Blizzard Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.03%', glicko: calculateGlicko(283, 0.03, 72.5, 27.9675, 25), demand: "Low"},
     { name: 'Paris Snow Globe', copies: 968, value: calculateNewValue(220, 968, 25, 72.5, 27.9675), pack: 'Blizzard Pack', sellprice: 300 , rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(968, 0.05, 72.5, 27.9675, 25), demand: "Low"},
@@ -127,11 +127,11 @@ const blookValues = [
     { name: 'White Peacock', copies: 189, value: calculateNewValue(340, 189, 20, 75, 25.04), pack: 'Safari Pack' , sellprice: 300 , rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(189, 0.02, 75, 25.04, 20), demand: "Low"},
     { name: 'Rainbow Panda', copies: 171, value: calculateNewValue(340, 171, 20, 75, 25.04), pack: 'Safari Pack', sellprice: 300  , rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(171, 0.02, 75, 25.04, 20), demand: "Low"},
     { name: 'Rose Quartz', copies: 409, value: calculateNewValue(220, 409, 20, 75, 25.0537), pack: 'Gemstone Pack', sellprice: 300 , rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(409, 0.05, 75, 25.0537, 20), demand: "Low"},
-    { name: 'Blue Raspberry', copies: 104, value: calculateNewValue(220, 104, 20, 75.2, 24.8625), pack: 'Fruit Pack', sellprice: 350 , rarity: "Chroma", droprate: '0.01%', glicko: calculateGlicko(104, 0.01, 75.2, 24.8625, 20), demand: "Moderate"},
+    { name: 'Blue Raspberry', copies: 104, value: calculateNewValue(380, 104, 20, 75.2, 24.8625), pack: 'Fruit Pack', sellprice: 350 , rarity: "Chroma", droprate: '0.01%', glicko: calculateGlicko(104, 0.01, 75.2, 24.8625, 20), demand: "Moderate"},
     { name: 'Green Apple', copies: 578, value: calculateNewValue(220, 578, 20, 75.2, 24.8625), pack: 'Fruit Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(578, 0.05, 75.2, 24.8625, 20), demand: "Low"},
     { name: 'Plasma Elemental', copies: 270, value: calculateNewValue(220, 270, 20, 75, 25), pack: 'Elemental Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(270, 0.05, 75, 25, 20), demand: "Low"},
     { name: 'Pink Blook', copies: 229, value: calculateNewValue(220, 229, 20, 0, 138.255), pack: 'Color Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(229, 0.05, 0, 138.255, 20), demand: "Low"},
-    { name: 'Blue Gummy Worm', copies: 150, value: calculateNewValue(300, 150, 20, 78, 22), pack: 'Candy Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(150, 0.02, 78, 22, 20), demand: "Low"},
+    { name: 'Blue Gummy Worm', copies: 150, value: calculateNewValue(340, 150, 20, 78, 22), pack: 'Candy Pack' , sellprice: 300, rarity: "Chroma", droprate: '0.02%', glicko: calculateGlicko(150, 0.02, 78, 22, 20), demand: "Low"},
     { name: 'Red Licorice', copies: 300, value: calculateNewValue(220, 300, 20, 78, 22), pack: 'Candy Pack', sellprice: 300, rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(300, 0.05, 78, 22, 20), demand: "Low"},
     { name: 'White Chocolate', copies: 504, value: calculateNewValue(100, 504, 20, 78, 22), pack: 'Candy Pack', sellprice: 300, rarity: "Chroma", droprate: '0.08%', glicko: calculateGlicko(504, 0.08, 78, 22, 20), demand: "Low"},
     { name: 'Chocolate Milk', copies: 1710, value: calculateNewValue(220, 1710, 20, 75, 26.05), pack: 'Breakfast Pack', sellprice: 300, rarity: "Chroma", droprate: '0.05%', glicko: calculateGlicko(1710, 0.05, 75, 26.05, 20), demand: "Low"},
